@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mcpyoutube:
-    image: 103.199.185.96/mcp-replicate:lastest
+    image: guinness7777/mcp-replicate:lastest
     ports:
       - 3839:3839
     environment:
