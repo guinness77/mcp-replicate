@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mcpyoutube:
+    image: 103.199.185.96/mcp-replicate:lastest
+    ports:
+      - 3839:3839
+    environment:
+      - PORT=3839
+    networks:
+      - web
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.role == manager
+
+networks:
+  web:
+    external: true
+    name: srv761630
