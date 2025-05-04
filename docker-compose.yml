@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mcpyoutube:
-    image: guinness7777/mcp-replicate-solutia:lastest
+    image: guinness7777/mcp-replicate-guinnes:lastest
    
     ports:
       - 3840:3840
