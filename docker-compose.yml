@@ -3,10 +3,11 @@ version: '3.8'
 services:
   mcpyoutube:
     image: guinness7777/mcp-replicate-solutia:lastest
+   
     ports:
-      - 3839:3839
+      - 3840:3840
     environment:
-      - PORT=3839
+      - PORT=3840
     networks:
       - web
     deploy:
@@ -20,4 +21,4 @@ services:
 networks:
   web:
     external: true
-    name: srv761630
+    name: dokploy-network
