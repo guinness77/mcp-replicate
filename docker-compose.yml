@@ -11,6 +11,8 @@ services:
       - web
     deploy:
       replicas: 1
+      restart_policy:
+        condition: on-failure
       placement:
         constraints:
           - node.role == manager
